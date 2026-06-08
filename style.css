@@ -212,23 +212,10 @@ h2 {
 /* =========================
    PROJECTS
 ========================= */
-.project-item {
-    width: 48%;
-}
-
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.skills-grid span {
-    transition: .3s ease;
-}
-
-.skills-grid span:hover {
-    background: rgb(155,135,21);
-    transform: translateY(-3px);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .project-card {

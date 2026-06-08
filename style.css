@@ -92,7 +92,7 @@ html {
     background-image: url(img/t.jpg);
     position: fixed;
     top: 0;
-    left: -300px;
+    left: -100px;
     padding: 25px;
     transition: left 0.4s ease;  /* animate left position */
     z-index: 1100;               /* higher than navbar */

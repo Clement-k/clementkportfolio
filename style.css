@@ -92,7 +92,7 @@ html {
     background-image: url(img/t.jpg);
     position: fixed;
     top: 0;
-    left: -100px;
+    left: -270px;
     padding: 25px;
     transition: left 0.4s ease;  /* animate left position */
     z-index: 1100;               /* higher than navbar */
@@ -167,6 +167,7 @@ html {
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 10px;
+    font-family: 'Lobster', cursive;
 }
 
 .hero-section {
@@ -280,10 +281,23 @@ h2 {
 /* =========================
    PROJECTS
 ========================= */
+.project-item {
+    width: 48%;
+}
+
 .projects-container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.skills-grid span {
+    transition: .3s ease;
+}
+
+.skills-grid span:hover {
+    background: rgb(155,135,21);
+    transform: translateY(-3px);
 }
 
 .project-card {

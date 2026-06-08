@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <header class="navbar">
+    <!-- Hamburger Menu -->
+    <div class="menu-btn" onclick="openMenu()">☰</div>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="img/l.jpg" alt="Clement Logo">
+    </div>
+</header>
+
+
+
+    <!-- MENU BUTTON -->
+    <!-- <div class="menu-btn" onclick="openMenu()">☰</div> -->
+
+    <!-- SIDE MENU -->
+    <div id="sideMenu" class="side-menu">
+
+        <!-- CLOSE BUTTON -->
+        <div class="close-btn" onclick="closeMenu()" style="color: white;"> × </div>
+
+        <div class="profile-box">
+            <img src="img/1.jpg" class="profile-pic" alt="My Photo">
+            <p style="font-size: 25px; color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Clement Agyapong</p>
+        </div>
+
+        <ul class="menu-list">
+            <li><a href="#home" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+
+        <!-- SIDE SOCIAL ICONS (FONT AWESOME) -->
+        <div class="side-socials">
+            <a href="https://www.facebook.com/share/1JCLfeaBCB/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/baminnit?s=21" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/_clement.k?igsh=MTkyaXZ6Z3NkdTdpMA%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main id="home">
+        <section class="hero-section">
+            <img src="img/1.jpg" class="main-photo" alt="My Photo">
+            <h1 style="font-family: lobster;">CLEMENT AGYAPONG</h1>
+
+        <div class="wrapper">
+             <!-- <div class="st">I'm</div> -->
+            <ul class="dt">
+                <li>Web Developer</li>
+                <li>Programmer</li>
+                <li>Front-end Developer</li>
+        <!-- <li>Freelancer</li> -->
+            </ul>
+        </div>
+
+
+            <!-- HERO SOCIAL ICONS -->
+            <!-- <div class="hero-socials">
+                <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div> -->
+        </section>
+
+        <section id="about">
+            <div><h2>About Me</h2>
+            <p> Hello, I'm Clement Agyapong a passionate Frontend Developer with almost 2 years of experience. I have a 
+                knack for creating stunning and user-friendly web applications to enhance business productivity. Highly confident in my front-end 
+                skills by the help of the tools, html, css, javascript, react etc. I love 
+                turning ideas into reality through code and design.</p>
+            </div>
+            <br>
+            <div> 
+                 <h2>Education</h2>
+                <p>Professional Diploma Degree | <b style=" background: linear-gradient(to right, #740441, #888885); 
+                -webkit-background-clip: text; color: transparent;"> Openlabs </b></p>
+                <br>
+                <p2>Humanities | <b style=" background: linear-gradient(to right, #740441, #888885); 
+                -webkit-background-clip: text; color: transparent;"> University of Ghana </b></p2>
+            </div>   
+            <br>
+           <div class="btn-box btns">
+    <a href="assets/Clement Annor Agyapong Resume.pdf"
+     class="btn" style="font-size: 12px;" target="_blank" rel="noopener noreferre">Download CV</a>
+</div>
+
+</section>
+
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <!-- <span>Git</span> -->
+        <span>Responsive Design</span>
+    </div>
+</section>
+
+
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="project-item">
+            <div class="project-card"
+                 style="background-image: url('img/Screenshot\ \(177\).png');">
+                <a href="https://misfitc.netlify.app/"
+                   target="_blank"
+                   class="view-icon">
+                    <i class="fa-solid fa-eye"></i>
+                </a>
+            </div>
+
+            <div class="project-info">
+                <h3>Misfitc</h3>
+                <p>Ecommerce site to browse and choose quality denim for yourself.</p>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-card"
+                 style="background-image: url('img/Screenshot\ \(178\).png');">
+                <a href="https://netmovie12.netlify.app/"
+                   target="_blank"
+                   class="view-icon">
+                    <i class="fa-solid fa-eye"></i>
+                </a>
+            </div>
+
+            <div class="project-info">
+                <h3>Netflix Clone</h3>
+                <p>Netfliix Clone to watch trailers and reviews.</p>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-card"
+                 style="background-image: url('img/Screenshot\ \(179\).png');">
+                <a href="https://misfitc.netlify.app/"
+                   target="_blank"
+                   class="view-icon">
+                    <i class="fa-solid fa-eye"></i>
+                </a>
+            </div>
+
+            <div class="project-info">
+                <h3>Kogmens Roofing Limited</h3>
+                <p>Website to browse best and quality roofing.</p>
+            </div>
+        </div>
+       
+
+    </div>
+</section>
+
+
+
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="status"></p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Your Name. All Rights Reserved.</p>
+
+        <div class="footer-socials">
+            <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

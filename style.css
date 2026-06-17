@@ -87,6 +87,94 @@ html {
 ========================= */
 /* SIDE MENU */
 
+/* =========================
+   SIDE MENU
+========================= */
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 280px;
+    height: 100vh;
+    background: #111827;
+    z-index: 2000;
+    transition: left 0.4s ease;
+    padding-top: 20px;
+    box-shadow: 5px 0 20px rgba(0,0,0,0.5);
+    overflow-y: auto;
+}
+
+/* Menu Open State */
+.side-menu.active {
+    left: 0;
+}
+
+/* Close Button */
+.close-btn {
+    color: white;
+    font-size: 35px;
+    text-align: right;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+/* Profile Area */
+.profile-box {
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--accent);
+    object-fit: cover;
+    margin: 0 auto 15px;
+}
+
+/* Menu Links */
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list li {
+    margin: 10px 0;
+}
+
+.menu-list a {
+    display: block;
+    padding: 14px 25px;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.menu-list a:hover {
+    background: rgba(201, 162, 39, 0.15);
+    color: var(--accent);
+    padding-left: 35px;
+}
+
+/* Social Icons */
+.side-socials {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.side-socials a {
+    color: white;
+    font-size: 24px;
+    margin: 0 12px;
+    transition: all 0.3s ease;
+}
+
+.side-socials a:hover {
+    color: var(--accent);
+    transform: translateY(-3px);
+}
 
 
 /* =========================

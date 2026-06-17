@@ -121,57 +121,63 @@ html {
 /* =========================
    TYPING / SLIDE TEXT FIX
 ========================= */
+/* =========================
+   TYPING / SLIDE TEXT
+========================= */
 
-.dt {
+.wrapper{
     height: 40px;
     overflow: hidden;
 }
 
-.dt li {
+.dt{
+    padding: 0;
+    margin: 0;
+}
+
+.dt li{
     list-style: none;
     font-size: 30px;
     font-weight: 600;
     color: rgb(155, 135, 21);
     line-height: 40px;
-    position: relative;
     height: 40px;
+    position: relative;
+
+    animation: slide 9s steps(3) infinite;
 }
 
-.dt {
-    animation: slide 9s infinite;
-}
-
-@keyframes slide {
-    0%,30% {
-        transform: translateY(0);
-    }
-
-    33%,63% {
-        transform: translateY(-40px);
-    }
-
-    66%,100% {
-        transform: translateY(-80px);
+@keyframes slide{
+    100%{
+        top: -120px; /* 3 items × 40px */
     }
 }
 
-/* typing cursor */
-.dt li::after {
+/* Typing Effect */
+.dt li span{
+    position: relative;
+}
+
+.dt li span::after{
     content: "";
     position: absolute;
     left: 0;
-    top: 0;
-    width: 100%;
     height: 100%;
+    width: 100%;
     background: var(--bg-main);
     border-left: 2px solid rgb(155, 135, 21);
+
     animation: typing 3s steps(20) infinite;
 }
 
-@keyframes typing {
-    0% { left: 0; }
-    40% { left: 100%; }
-    100% { left: 0; }
+@keyframes typing{
+    40%,60%{
+        left: calc(100% + 10px);
+    }
+
+    100%{
+        left: 0;
+    }
 }
 
 /* =========================

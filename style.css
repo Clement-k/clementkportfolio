@@ -124,59 +124,39 @@ html {
 /* =========================
    TYPING / SLIDE TEXT
 ========================= */
-
 .wrapper{
     height: 40px;
     overflow: hidden;
 }
 
 .dt{
-    padding: 0;
-    margin: 0;
+    animation: slide 9s infinite;
 }
 
 .dt li{
     list-style: none;
+    height: 40px;
+    line-height: 40px;
     font-size: 30px;
     font-weight: 600;
-    color: rgb(155, 135, 21);
-    line-height: 40px;
-    height: 40px;
-    position: relative;
-
-    animation: slide 9s steps(3) infinite;
+    color: rgb(155,135,21);
 }
 
 @keyframes slide{
-    100%{
-        top: -120px; /* 3 items × 40px */
+    0%,30%{
+        transform: translateY(0);
     }
-}
 
-/* Typing Effect */
-.dt li span{
-    position: relative;
-}
+    33%,63%{
+        transform: translateY(-40px);
+    }
 
-.dt li span::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: var(--bg-main);
-    border-left: 2px solid rgb(155, 135, 21);
-
-    animation: typing 3s steps(20) infinite;
-}
-
-@keyframes typing{
-    40%,60%{
-        left: calc(100% + 10px);
+    66%,96%{
+        transform: translateY(-80px);
     }
 
     100%{
-        left: 0;
+        transform: translateY(0);
     }
 }
 

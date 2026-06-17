@@ -177,6 +177,23 @@ html {
 }
 
 
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1500;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
 /* =========================
    HERO SECTION
 ========================= */

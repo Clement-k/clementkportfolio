@@ -20,12 +20,15 @@ body {
 }
 
 h1,
-h2,
 h3 {
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.5px;
 }
 
+h2 {
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(155,135,21);
+    margin-bottom: 15px;
+}
 
 
 * {
@@ -200,6 +203,29 @@ h2 {
     color: rgb(155, 135, 21);
     margin-bottom: 15px;
 }
+
+
+
+.menu-socials {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-socials a {
+    color: white;
+    font-size: 26px;
+    margin: 0 12px;
+    transition: 0.3s ease;
+}
+
+.menu-socials a:hover {
+    color: rgb(155,135,21);
+    transform: scale(1.2);
+}
+
+
 
 /* =========================
    PROJECTS
@@ -403,6 +429,21 @@ footer {
     opacity: 1;
     visibility: visible;
 }
+
+.side-menu ul li a {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+p,
+.project-info p,
+#contactForm input,
+#contactForm textarea {
+    font-family: "Times New Roman", Times, serif;
+}
+
 
 
 /* =========================

@@ -1,22 +1,18 @@
+// OPEN MENU
 function openMenu() {
     document.getElementById("sideMenu").classList.add("active");
     document.getElementById("overlay").classList.add("active");
 }
 
+// CLOSE MENU
 function closeMenu() {
     document.getElementById("sideMenu").classList.remove("active");
     document.getElementById("overlay").classList.remove("active");
 }
 
-
-function openMenu() {
-    sideMenu.classList.add("active");
-    overlay.classList.add("active");
-    document.body.classList.add("menu-open");
-}
-
-function closeMenu() {
-    sideMenu.classList.remove("active");
-    overlay.classList.remove("active");
-    document.body.classList.remove("menu-open");
-}
+// CLOSE MENU WHEN ESC IS PRESSED
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+        closeMenu();
+    }
+});

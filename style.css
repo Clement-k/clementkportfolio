@@ -71,10 +71,11 @@ html {
 .menu-btn {
     font-size: 28px;
     cursor: pointer;
-    background: rgb(155, 135, 21);
+    background: rgb(155,135,21);
     color: white;
-    padding: 6px 10px;
+    padding: 8px 12px;
     border-radius: 5px;
+    z-index: 2500;
 }
 
 .logo img {
@@ -335,6 +336,170 @@ footer {
 .footer-socials i:hover {
     color: #fff;
     transform: scale(1.2);
+}
+
+
+/* =========================
+   SIDE MENU
+========================= */
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    background: #111827;
+    z-index: 2000;
+    transition: 0.4s ease;
+    padding-top: 80px;
+    box-shadow: 4px 0 15px rgba(0,0,0,.5);
+}
+
+.side-menu.active {
+    left: 0;
+}
+
+.side-menu ul {
+    list-style: none;
+}
+
+.side-menu ul li {
+    margin: 25px 0;
+}
+
+.side-menu ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    display: block;
+    transition: .3s;
+}
+
+.side-menu ul li a:hover {
+    background: rgb(155,135,21);
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 1500;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Large laptops */
+@media (max-width: 1200px) {
+
+    .project-card {
+        height: 350px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .main-photo {
+        width: 220px;
+        height: 220px;
+    }
+
+    .dt li {
+        font-size: 22px;
+    }
+
+    section {
+        padding: 35px 20px;
+    }
+
+    .project-card {
+        height: 280px;
+    }
+
+    .navbar {
+        padding: 8px 15px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+
+    .hero-section {
+        padding-top: 90px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .dt li {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 25px 15px;
+        margin: 20px 10px;
+    }
+
+    .project-card {
+        height: 220px;
+    }
+
+    .side-menu {
+        width: 250px;
+        left: -250px;
+    }
+
+    .footer-socials i {
+        font-size: 22px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .dt li {
+        font-size: 16px;
+    }
+
+    .main-photo {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 
